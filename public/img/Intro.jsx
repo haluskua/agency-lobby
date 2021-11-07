@@ -23,10 +23,9 @@ export const Intro = () => {
       <div className={styles.card}>
         <Image
           src="/img/crest_trans_black.png"
-          width="100%"
-          height="100%"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
+          priority
           alt=" logo"
         />
       </div>

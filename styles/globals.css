@@ -22,4 +22,6 @@ a {
   position: absolute;
   z-index: 999;
   opacity: .39;
+  /* background: url('../public/img/polygon.jpg');
+  background-size: cover; */
 }
