@@ -1,9 +1,14 @@
 import styles from "../../styles/Intro.module.css";
+import Circle from '../../components/Circle'
+
 import Image from "next/image";
 
 export const Intro = () => {
   return (
     <div className={styles.container}>
+      <Circle backgroundColor = "yellow" top="-60vh" left="-60vh" />
+      <Circle backgroundColor = "purple" right="-80vh" opacity =".1" />
+
       <div className={styles.card}>
         <h1 className={styles.title}>
           <span className={styles.brand}>OUXUID</span> DIGITAL PORTFOLIO
