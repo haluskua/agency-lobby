@@ -12,18 +12,18 @@ const Services = ({ services }) => {
           {services.map((service) => (
             <Link passHref key={service.id} href={`/products/${service.name}`}>
               <div className={styles.service}>
+                <div className={styles.desc}>{service.desc}</div>
                 <span className={styles.cat}>{service.title}</span>
                 <div className={styles.media}>
-
                   {service.video ? (
                     <video
-                      src={service.video}
+                      src={`/img/${service.video}`}
                       autoPlay
                       loop
+                      muted
                       className={styles.video}
                     />
                   ) : (
-
                     <Image
                       alt=""
                       src={`/img/${service.photo}`}
